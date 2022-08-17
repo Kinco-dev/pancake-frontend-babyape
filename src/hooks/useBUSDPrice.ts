@@ -1,5 +1,5 @@
 import { Currency, JSBI, Price, WNATIVE, ChainId } from '@pancakeswap/sdk'
-import { CAKE, BUSD } from 'config/constants/tokens'
+import { BUSD, BABYAPE } from 'config/constants/tokens'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useMemo } from 'react'
 import { multiplyPriceByAmount } from 'utils/prices'
@@ -79,7 +79,8 @@ export default function useBUSDPrice(currency?: Currency): Price<Currency, Curre
 
 export const useCakeBusdPrice = (): Price<Currency, Currency> | undefined => {
   const { chainId } = useActiveWeb3React()
-  const cakeBusdPrice = useBUSDPrice(CAKE[chainId])
+  const cakeBusdPrice = useBUSDPrice(BABYAPE[chainId])
+  console.log(cakeBusdPrice)
   return cakeBusdPrice
 }
 

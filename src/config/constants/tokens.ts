@@ -9,6 +9,15 @@ const CAKE_MAINNET = new Token(
   'https://pancakeswap.finance/',
 )
 
+const BABYAPE_MAINNET = new Token(
+  ChainId.BSC,
+  '0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575',
+  18,
+  'BABYAPE',
+  'BabyApe',
+  'https://www.babyapecoinofficial.net/',
+)
+
 const CAKE_TESTNET = new Token(
   ChainId.BSC_TESTNET,
   '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
@@ -82,6 +91,9 @@ export const USDC = {
 export const CAKE = {
   [ChainId.BSC]: CAKE_MAINNET,
   [ChainId.BSC_TESTNET]: CAKE_TESTNET,
+}
+export const BABYAPE = {
+  [ChainId.BSC]: BABYAPE_MAINNET,
 }
 
 const BUSD_MAINNET = new Token(

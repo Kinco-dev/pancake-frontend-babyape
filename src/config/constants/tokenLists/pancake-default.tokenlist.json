@@ -225,6 +225,14 @@
       "chainId": 97,
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png"
+    },
+    {
+      "name": "BabyApe",
+      "symbol": "BABYAPE",
+      "address": "0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://pancakeswap.finance/images/tokens/0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575.png"
     }
   ]
 }

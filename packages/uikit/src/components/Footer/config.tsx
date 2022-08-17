@@ -1,6 +1,6 @@
 import { Language } from "../LangSelector/types";
 import { FooterLinkType } from "./types";
-import { TwitterIcon, TelegramIcon, RedditIcon, InstagramIcon, GithubIcon, DiscordIcon, MediumIcon } from "../Svg";
+import { TwitterIcon, TelegramIcon, GithubIcon, DiscordIcon } from "../Svg";
 
 export const footerLinks: FooterLinkType[] = [
   {
@@ -80,7 +80,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/babyapeoff",
   },
   {
     label: "Telegram",
@@ -88,94 +88,69 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/pancakeswap",
-      },
-      {
-        label: "Bahasa Indonesia",
-        href: "https://t.me/PancakeSwapIndonesia",
-      },
-      {
-        label: "中文",
-        href: "https://t.me/PancakeSwap_CN",
-      },
-      {
-        label: "Tiếng Việt",
-        href: "https://t.me/PancakeSwapVN",
-      },
-      {
-        label: "Italiano",
-        href: "https://t.me/pancakeswap_ita",
-      },
-      {
-        label: "русский",
-        href: "https://t.me/pancakeswap_ru",
-      },
-      {
-        label: "Türkiye",
-        href: "https://t.me/pancakeswapturkiye",
-      },
-      {
-        label: "Português",
-        href: "https://t.me/PancakeSwapPortuguese",
-      },
-      {
-        label: "Español",
-        href: "https://t.me/PancakeswapEs",
-      },
-      {
-        label: "日本語",
-        href: "https://t.me/pancakeswapjp",
+        href: "https://t.me/BabyApecoinTGOfficial",
       },
       {
         label: "Français",
-        href: "https://t.me/pancakeswapfr",
+        href: "https://t.me/BabyApeFr",
       },
       {
-        label: "Deutsch",
-        href: "https://t.me/PancakeSwap_DE",
+        label: "中文",
+        href: "https://t.me/babyapechinaa",
       },
       {
-        label: "Filipino",
-        href: "https://t.me/Pancakeswap_Ph",
+        label: "Türkiye",
+        href: "https://t.me/babyapeturkiye",
       },
       {
-        label: "ქართული ენა",
-        href: "https://t.me/PancakeSwapGeorgia",
+        label: "Nigeria",
+        href: "https://t.me/babyapenigeria",
       },
       {
-        label: "हिन्दी",
-        href: "https://t.me/PancakeSwapINDIA",
+        label: "India",
+        href: "https://t.me/babyapeindiaa",
+      },
+      {
+        label: "Arabic",
+        href: "https://t.me/babyapearabic",
+      },
+      {
+        label: "Brazil",
+        href: "https://t.me/babyapebrrazil",
       },
       {
         label: "Announcements",
-        href: "https://t.me/PancakeSwapAnn",
+        href: "https://t.me/babyapeannouncements",
+      },
+      {
+        label: "Army",
+        href: "https://t.me/babyapearmyy",
+      },
+      {
+        label: "CyberVerse",
+        href: "https://t.me/ChronicleofCyberVerse",
       },
     ],
   },
-  {
+  /*   {
     label: "Reddit",
     icon: RedditIcon,
     href: "https://reddit.com/r/pancakeswap",
-  },
-  {
+  }, */
+  /*   {
     label: "Instagram",
     icon: InstagramIcon,
     href: "https://instagram.com/pancakeswap_official",
-  },
+  }, */
   {
     label: "Github",
     icon: GithubIcon,
-    href: "https://github.com/pancakeswap/",
+    href: "https://github.com/BabyApeOfficial/baby_ape_token",
   },
   {
     label: "Discord",
     icon: DiscordIcon,
-    href: "https://discord.gg/pancakeswap",
-  },
-  {
-    label: "Medium",
-    icon: MediumIcon,
-    href: "https://medium.com/pancakeswap",
+    href: "https://discord.com/invite/P9YSpr7NMG",
   },
 ];
 
