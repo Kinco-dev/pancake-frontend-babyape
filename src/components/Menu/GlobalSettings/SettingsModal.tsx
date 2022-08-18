@@ -75,13 +75,13 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
         {mode === SettingsMode.GLOBAL && (
           <>
             <Flex pb="24px" flexDirection="column">
-              <Text bold textTransform="uppercase" fontSize="18px" color="secondary" mb="24px">
+              {/*               <Text bold textTransform="uppercase" fontSize="18px" color="secondary" mb="24px">
                 {t('Global')}
               </Text>
               <Flex justifyContent="space-between" mb="24px">
                 <Text>{t('Dark mode')}</Text>
                 <ThemeSwitcher isDark={isDark} toggleTheme={() => setTheme(isDark ? 'light' : 'dark')} />
-              </Flex>
+              </Flex> */}
               <GasSettings />
             </Flex>
           </>

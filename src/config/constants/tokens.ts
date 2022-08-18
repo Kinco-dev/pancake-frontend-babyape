@@ -95,6 +95,9 @@ export const CAKE = {
 export const BABYAPE = {
   [ChainId.BSC]: BABYAPE_MAINNET,
 }
+/* export const SAFEGAMECASH = {
+  [ChainId.BSC]: SAFEGAMECASH2_MAINNET,
+} */
 
 const BUSD_MAINNET = new Token(
   ChainId.BSC,
@@ -161,6 +164,23 @@ export const bscTokens = {
     'https://www.binance.com/',
   ),
   cake: CAKE_MAINNET,
+  babyape: BABYAPE_MAINNET,
+  safegamecashv2: new Token(
+    ChainId.BSC,
+    '0x6E2bA8115392fA84A80daEDa8bcB8a6172beb009',
+    18,
+    'SGC2',
+    'SafeGame Cash v2',
+    'https://safegamecash.org/',
+  ),
+  crogecoin: new Token(
+    ChainId.BSC,
+    '0xFAE8E64cDDE73550e7d7f0469557a33a417B2868',
+    9,
+    'CRODGE',
+    'Crogecoin',
+    'https://www.crogecoin.com/',
+  ),
   gmi: new Token(ChainId.BSC, '0x93D8d25E3C9A847a5Da79F79ecaC89461FEcA846', 18, 'GMI', 'Gamifi', 'https://gamifi.gg/'),
   tlos: new Token(
     ChainId.BSC,

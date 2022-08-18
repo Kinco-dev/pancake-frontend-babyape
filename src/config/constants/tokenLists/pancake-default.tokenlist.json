@@ -232,7 +232,23 @@
       "address": "0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575.png"
+      "logoURI": "http://localhost:3000/images/tokens/0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575.png"
+    },
+    {
+      "name": "SafeGame Cash v2",
+      "symbol": "SGC2",
+      "address": "0x6E2bA8115392fA84A80daEDa8bcB8a6172beb009",
+      "chainId": 56,
+      "decimals": 9,
+      "logoURI": "http://localhost:3000/images/tokens/0x6E2bA8115392fA84A80daEDa8bcB8a6172beb009.png"
+    },
+    {
+      "name": "Crogecoin",
+      "symbol": "CROGE",
+      "address": "0xFAE8E64cDDE73550e7d7f0469557a33a417B2868",
+      "chainId": 56,
+      "decimals": 9,
+      "logoURI": "http://localhost:3000/images/tokens/0xFAE8E64cDDE73550e7d7f0469557a33a417B2868.png"
     }
   ]
 }
