@@ -1,3 +1,4 @@
+// masterChef => cakePool => cakeFlexibleSideVault
 export default {
   masterChef: {
     97: '0xB4A466911556e39210a6bB2FaECBB59E4eB7E43d',
