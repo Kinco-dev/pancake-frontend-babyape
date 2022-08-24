@@ -80,7 +80,6 @@ export default function useBUSDPrice(currency?: Currency): Price<Currency, Curre
 export const useCakeBusdPrice = (): Price<Currency, Currency> | undefined => {
   const { chainId } = useActiveWeb3React()
   const cakeBusdPrice = useBUSDPrice(BABYAPE[chainId])
-  console.log(cakeBusdPrice)
   return cakeBusdPrice
 }
 

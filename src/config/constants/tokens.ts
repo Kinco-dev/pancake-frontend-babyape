@@ -165,19 +165,19 @@ export const bscTokens = {
   ),
   cake: CAKE_MAINNET,
   babyape: BABYAPE_MAINNET,
-  safegamecashv2: new Token(
+  sgc2: new Token(
     ChainId.BSC,
     '0x6E2bA8115392fA84A80daEDa8bcB8a6172beb009',
-    18,
+    9,
     'SGC2',
     'SafeGame Cash v2',
     'https://safegamecash.org/',
   ),
-  crogecoin: new Token(
+  croge: new Token(
     ChainId.BSC,
     '0xFAE8E64cDDE73550e7d7f0469557a33a417B2868',
     9,
-    'CRODGE',
+    'CROGE',
     'Crogecoin',
     'https://www.crogecoin.com/',
   ),

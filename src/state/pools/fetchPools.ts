@@ -52,11 +52,18 @@ export const fetchPoolsBlockLimits = async () => {
 }
 
 const poolsBalanceOf = poolsConfig.map((poolConfig) => {
-  return {
-    address: poolConfig.stakingToken.address,
-    name: 'balanceOf',
-    params: [getAddress(poolConfig.contractAddress)],
-  }
+  if (poolConfig.stakingToken.address === '0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575') {
+    return {
+      address: '0x12Cba2536Abddec031fB6e4BF68046dd465787cD', // HERE
+      name: 'totalStakedTokens',
+      params: [],
+    }
+  } else
+    return {
+      address: poolConfig.stakingToken.address,
+      name: 'balanceOf',
+      params: [getAddress(poolConfig.contractAddress)],
+    }
 })
 
 export const fetchPoolsTotalStaking = async () => {

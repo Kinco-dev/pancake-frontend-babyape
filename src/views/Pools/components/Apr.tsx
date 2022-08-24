@@ -85,7 +85,7 @@ const Apr: React.FC<React.PropsWithChildren<AprProps>> = ({
                 fontSize={fontSize}
                 isDisabled={isFinished}
                 value={isFinished ? 0 : apr}
-                decimals={2}
+                decimals={0}
                 unit="%"
               />
               {!isFinished && showIcon && (

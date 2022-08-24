@@ -11,6 +11,8 @@ import {
 import { deserializeToken } from 'state/user/hooks/helpers'
 import { BIG_ZERO } from 'utils/bigNumber'
 import { convertSharesToCake } from 'views/Pools/helpers'
+import axios from 'axios'
+import { LeftWrapper } from 'views/Home/components/Banners/Styled'
 
 type UserData =
   | DeserializedPool['userData']
@@ -155,6 +157,7 @@ export const transformVault = (vaultKey: VaultKey, vault: SerializedCakeVault): 
 }
 
 export const getTokenPricesFromFarm = (farms: SerializedFarm[]) => {
+  console.log(farms)
   return farms.reduce((prices, farm) => {
     const quoteTokenAddress = farm.quoteToken.address.toLowerCase()
     const tokenAddress = farm.token.address.toLowerCase()
@@ -168,4 +171,19 @@ export const getTokenPricesFromFarm = (farms: SerializedFarm[]) => {
     /* eslint-enable no-param-reassign */
     return prices
   }, {})
+}
+
+export const getTokenPricesFromAPIs = async () => {
+  const prices = []
+  const tokens = [
+    { address: '0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575' },
+    { address: '0x6E2bA8115392fA84A80daEDa8bcB8a6172beb009' },
+  ]
+  /* eslint-disable no-await-in-loop */
+  for (let i = 0; i < tokens.length; i += 1) {
+    const tokenAddress = tokens[i].address.toLowerCase()
+    const res = await axios.get(`https://api.pancakeswap.info/api/v2/tokens/${tokens[i].address}`)
+    prices.push({ address: tokenAddress, price: new BigNumber(res.data.data.price).toNumber() })
+  }
+  return prices
 }

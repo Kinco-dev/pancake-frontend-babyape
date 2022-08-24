@@ -35,7 +35,7 @@ import {
   fetchUserStakeBalances,
 } from './fetchPoolsUser'
 import { fetchPublicVaultData, fetchVaultFees, fetchPublicFlexibleSideVaultData } from './fetchVaultPublic'
-import { getTokenPricesFromFarm } from './helpers'
+import { getTokenPricesFromFarm, getTokenPricesFromAPIs } from './helpers'
 import { resetUserState } from '../global/actions'
 import { fetchUserIfoCredit, fetchPublicIfoData } from './fetchUserIfo'
 import { fetchVaultUser, fetchFlexibleSideVaultUser } from './fetchVaultUser'
@@ -82,7 +82,7 @@ const initialState: PoolsState = {
 }
 
 const cakeVaultAddress = getCakeVaultAddress()
-
+// HERE
 export const fetchCakePoolPublicDataAsync = () => async (dispatch, getState) => {
   const farmsData = getState().farms.data
   const prices = getTokenPricesFromFarm(farmsData)
@@ -165,18 +165,25 @@ export const fetchPoolsPublicDataAsync = (currentBlockNumber: number) => async (
       : []
 
     const prices = getTokenPricesFromFarm([...farmsData, ...farmsWithPricesOfDifferentTokenPools])
+    const pricesForPoolsWithoutFarms = await getTokenPricesFromAPIs()
 
     const liveData = poolsConfig.map((pool) => {
       const blockLimit = blockLimits.find((entry) => entry.sousId === pool.sousId)
       const totalStaking = totalStakings.find((entry) => entry.sousId === pool.sousId)
       const isPoolEndBlockExceeded = currentBlock > 0 && blockLimit ? currentBlock > Number(blockLimit.endBlock) : false
       const isPoolFinished = pool.isFinished || isPoolEndBlockExceeded
-
       const stakingTokenAddress = pool.stakingToken.address ? pool.stakingToken.address.toLowerCase() : null
-      const stakingTokenPrice = stakingTokenAddress ? prices[stakingTokenAddress] : 0
-
+      const stakingTokenPrice = stakingTokenAddress
+        ? prices[stakingTokenAddress]
+          ? prices[stakingTokenAddress]
+          : pricesForPoolsWithoutFarms.find((token) => token.address === stakingTokenAddress).price
+        : 0
       const earningTokenAddress = pool.earningToken.address ? pool.earningToken.address.toLowerCase() : null
-      const earningTokenPrice = earningTokenAddress ? prices[earningTokenAddress] : 0
+      const earningTokenPrice = earningTokenAddress
+        ? prices[earningTokenAddress]
+          ? prices[earningTokenAddress]
+          : pricesForPoolsWithoutFarms.find((token) => token.address === earningTokenAddress).price
+        : 0
       const apr = !isPoolFinished
         ? getPoolApr(
             stakingTokenPrice,

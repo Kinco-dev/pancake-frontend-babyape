@@ -82,15 +82,15 @@ export const livePools: SerializedPoolConfig[] = [
     version: 1,
   },
   {
-    sousId: 291,
+    sousId: 302,
     stakingToken: serializedTokens.babyape,
     earningToken: serializedTokens.babyape,
     contractAddress: {
-      56: '0x4e6d79a342370484b9c6b99f74213e3cd5330fab',
+      56: '0x12Cba2536Abddec031fB6e4BF68046dd465787cD',
       97: '',
     },
     poolCategory: PoolCategory.CORE,
-    tokenPerBlock: '10',
+    tokenPerBlock: '1',
     version: 1,
   },
   {
