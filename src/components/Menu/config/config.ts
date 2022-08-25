@@ -49,6 +49,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         fillIcon: EarnFillIcon,
         supportChainIds: [ChainId.BSC],
         image: '/images/decorations/pe2.png',
+        showItemsOnMobile: false,
         items: [],
       },
       {
@@ -56,6 +57,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         href: '/allies',
         icon: EarnIcon,
         fillIcon: EarnFillIcon,
+        showItemsOnMobile: false,
         items: [],
       },
     ].map((item) => addMenuItemSupported(item, chainId))
