@@ -1,8 +1,17 @@
-import { FC } from 'react'
-import Farms, { FarmsContext } from './Farms'
+import Page from 'components/Layout/Page'
+import PageHeader from 'components/PageHeader'
 
-export const FarmsPageLayout: FC<React.PropsWithChildren<unknown>> = ({ children }) => {
-  return <Farms>{children}</Farms>
+const Allies: React.FC<React.PropsWithChildren> = () => {
+  return (
+    <>
+      <PageHeader>
+        <h3>Test1</h3>
+      </PageHeader>
+      <Page>
+        <p>Test</p>
+      </Page>
+    </>
+  )
 }
 
-export { FarmsContext }
+export default Allies
