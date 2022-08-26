@@ -235,17 +235,19 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
 
   const cardLayout = (
     <CardLayout>
-      {chosenPools.map((pool) =>
-        pool.vaultKey ? (
-          <CakeVaultCard key={pool.vaultKey} pool={pool} showStakedOnly={stakedOnly} />
-        ) : (
-          <PoolCard key={pool.sousId} pool={pool} account={account} />
-        ),
-      )}
+      {chosenPools
+        .filter((pool) => pool.sousId > 1)
+        .map((pool) => (pool.vaultKey ? <span /> : <PoolCard key={pool.sousId} pool={pool} account={account} />))}
     </CardLayout>
   )
 
-  const tableLayout = <PoolsTable urlSearch={normalizedUrlSearch} pools={chosenPools} account={account} />
+  const tableLayout = (
+    <PoolsTable
+      urlSearch={normalizedUrlSearch}
+      pools={chosenPools.filter((pool) => pool.sousId > 1)}
+      account={account}
+    />
+  )
 
   return (
     <>
@@ -256,10 +258,10 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
               {t('Syrup Pools')}
             </Heading>
             <Heading scale="md" color="text">
-              {t('Just stake some tokens to earn.')}
+              {t('Just stake BABYAPE to earn some alliance tokens.')}
             </Heading>
             <Heading scale="md" color="text">
-              {t('High APR, low risk.')}
+              {t('Enjoy')}
             </Heading>
           </Flex>
         </Flex>

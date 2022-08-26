@@ -109,15 +109,17 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of pancakes.')}
+            {t('Get rewards by buying alliance tokens.')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+            {t('Trade, earn and win rewards on the most popular decentralized platform dedicated to memes.')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
-            <NextLinkFromReactRouter to="/swap">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
+            <NextLinkFromReactRouter to="/allies">
+              {' '}
+              {/* TODO */}
+              <Button variant={!account ? 'secondary' : 'primary'}>{t('See rewards')}</Button>
             </NextLinkFromReactRouter>
           </Flex>
         </Flex>

@@ -92,7 +92,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
             </Box>
             <Button
               as="a"
-              href="https://pancakeswap.finance/swap?outputCurrency=0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575&chainId=56"
+              href="https://allianceswap.finance/swap?outputCurrency=0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575&chainId=56"
               target="_blank"
               scale="sm"
               endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}

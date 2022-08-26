@@ -38,6 +38,7 @@ const config = {
     images: {
       allowFutureImage: true,
     },
+    disableExperimentalFeaturesWarning: true,
   },
   reactStrictMode: true,
   swcMinify: true,

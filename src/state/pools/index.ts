@@ -176,13 +176,13 @@ export const fetchPoolsPublicDataAsync = (currentBlockNumber: number) => async (
       const stakingTokenPrice = stakingTokenAddress
         ? prices[stakingTokenAddress]
           ? prices[stakingTokenAddress]
-          : pricesForPoolsWithoutFarms.find((token) => token.address === stakingTokenAddress).price
+          : pricesForPoolsWithoutFarms?.find((token) => token.address === stakingTokenAddress)?.price
         : 0
       const earningTokenAddress = pool.earningToken.address ? pool.earningToken.address.toLowerCase() : null
       const earningTokenPrice = earningTokenAddress
         ? prices[earningTokenAddress]
           ? prices[earningTokenAddress]
-          : pricesForPoolsWithoutFarms.find((token) => token.address === earningTokenAddress).price
+          : pricesForPoolsWithoutFarms?.find((token) => token.address === earningTokenAddress)?.price
         : 0
       const apr = !isPoolFinished
         ? getPoolApr(

@@ -18,7 +18,7 @@ const StyledHeroSection = styled(PageSection)`
   padding-top: 16px;
 
   ${({ theme }) => theme.mediaQueries.md} {
-    padding-top: 48px;
+    padding-top: 6px;
   }
 `
 
@@ -60,13 +60,13 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {account && chainId === ChainId.BSC && (
+        {/* {account && chainId === ChainId.BSC && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
         )}
-        {/*         <MultipleBanner />
-         */}{' '}
+                 <MultipleBanner />
+         } */}{' '}
         <Hero />
       </StyledHeroSection>
       <PageSection
