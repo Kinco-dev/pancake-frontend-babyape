@@ -365,7 +365,7 @@ const ifos: Ifo[] = [
       distributionRatio: 1,
     },
     currency: cakeBnbLpToken,
-    token: bscTokens.belt,
+    token: bscTokens.hzn,
     releaseBlockNumber: 5493919,
     campaignId: '511080000',
     articleUrl: 'https://pancakeswap.medium.com/belt-fi-belt-ifo-to-be-hosted-on-pancakeswap-353585117e32',
