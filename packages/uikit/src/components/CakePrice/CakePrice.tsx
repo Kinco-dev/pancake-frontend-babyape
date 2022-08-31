@@ -30,10 +30,7 @@ const CakePrice: React.FC<React.PropsWithChildren<Props>> = ({
   showSkeleton = true,
 }) => {
   return cakePriceUsd ? (
-    <PriceLink
-      href="http://localhost:3000/swap?outputCurrency=0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575&chainId=56" // TODO
-      target="_blank"
-    >
+    <PriceLink href="/swap?outputCurrency=0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575&chainId=56" target="_blank">
       <LogoRound />
       <Text color={color} bold>{`$${cakePriceUsd.toFixed(6)}`}</Text>
     </PriceLink>

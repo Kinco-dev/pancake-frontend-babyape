@@ -74,15 +74,6 @@ const tokens = {
     decimals: 8,
     projectLink: "https://www.nuls.io/",
   },
-  belt: {
-    symbol: "BELT",
-    address: {
-      56: "0xE0e514c71282b6f4e823703a39374Cf58dc3eA4f",
-      97: "",
-    },
-    decimals: 18,
-    projectLink: "https://beta.belt.fi/",
-  },
   ramp: {
     symbol: "RAMP",
     address: {

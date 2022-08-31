@@ -10,7 +10,7 @@ const Logo: React.FC<React.PropsWithChildren<LogoProps>> = ({ isDark, ...props }
   const textColor = isDark ? "#FFFFFF" : "#000000";
   return (
     <div>
-      <img src="http://localhost:3000/images/logo-long.png" alt="BabyApe logo" />
+      <img src="images/logo-long.png" alt="BabyApe logo" />
     </div>
   );
 };

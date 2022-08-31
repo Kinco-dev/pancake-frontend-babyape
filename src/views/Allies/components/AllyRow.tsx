@@ -44,9 +44,7 @@ const AllyRow: React.FC<
             {t('Buy')}
           </Text>
           <Text bold={!isMobile} small={isMobile}>
-            <Link href={`http://localhost:3000/swap?outputCurrency=${mainToken.address}&chainId=56`}>
-              {mainToken.name}
-            </Link>
+            <Link href={`swap?outputCurrency=${mainToken.address}&chainId=56`}>{mainToken.name}</Link>
           </Text>
           <Text fontSize="12px" color="textSubtle">
             Get {rewardPercent1 + rewardPercent2}% rewards
@@ -61,9 +59,7 @@ const AllyRow: React.FC<
             </Text>
             <Flex>
               <Text bold fontSize="16px" textAlign="left">
-                <Link href={`http://localhost:3000/swap?outputCurrency=${mainToken.address}&chainId=56`}>
-                  {mainToken.symbol}
-                </Link>
+                <Link href={`swap?outputCurrency=${mainToken.address}&chainId=56`}>{mainToken.symbol}</Link>
               </Text>
             </Flex>
           </CellContent>

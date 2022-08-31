@@ -305,14 +305,6 @@ export const bscTokens = {
     'Hotcross Token',
     'https://www.hotcross.com/',
   ),
-  belt: new Token(
-    ChainId.BSC,
-    '0xE0e514c71282b6f4e823703a39374Cf58dc3eA4f',
-    18,
-    'BELT',
-    'Belt Token',
-    'https://beta.belt.fi/',
-  ),
   watch: new Token(
     ChainId.BSC,
     '0x7A9f28EB62C791422Aa23CeAE1dA9C847cBeC9b0',

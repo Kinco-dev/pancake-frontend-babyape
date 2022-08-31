@@ -42,10 +42,10 @@ const AlliesTable: React.FC<React.PropsWithChildren> = () => {
     },
     {
       mainToken: new Token(56, '0x6E2bA8115392fA84A80daEDa8bcB8a6172beb009', 9, 'SGC2', 'SafeGame Cash v2'),
-      rewardToken1: new Token(56, '0x2170Ed0880ac9A755fd29B2688956BD959F933F8', 18, 'ETH', 'Ethereum'),
-      rewardToken2: null,
-      rewardPercent1: 3,
-      rewardPercent2: 0,
+      rewardToken1: new Token(56, '0x8f8d01fF0B6Bd5a5C0611EE2667c3C59cf980575', 18, 'BABYAPE', 'BabyApe'),
+      rewardToken2: new Token(56, '0x2170Ed0880ac9A755fd29B2688956BD959F933F8', 18, 'ETH', 'Ethereum'),
+      rewardPercent1: 4,
+      rewardPercent2: 4,
     },
   ]
 
