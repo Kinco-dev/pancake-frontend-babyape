@@ -974,17 +974,6 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 29,
-    v1pid: 318,
-    lpSymbol: 'BELT-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0xF3Bc6FC080ffCC30d93dF48BFA2aA14b869554bb',
-    },
-    token: serializedTokens.belt,
-    quoteToken: serializedTokens.wbnb,
-  },
-  {
     pid: 28,
     v1pid: 317,
     lpSymbol: 'RAMP-BUSD LP',

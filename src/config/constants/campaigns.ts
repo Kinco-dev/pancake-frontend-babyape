@@ -29,12 +29,6 @@ const campaigns: Campaign[] = [
     badge: 'ifo-hzn.svg',
   },
   {
-    id: '511080000',
-    type: 'ifo',
-    title: 'Belt',
-    badge: 'ifo-belt.svg',
-  },
-  {
     id: '511070000',
     type: 'ifo',
     title: 'Yieldwatch',
