@@ -47,7 +47,7 @@ const Stats = () => {
       </Text>
       <Flex flexWrap="wrap">
         <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
-          {t('Rewards when buying as well as staking will allow you to get high returns on your investments')}
+          {t('Rewards when buying as well as staking will allow you to get high returns on your investments.')}
         </Text>
       </Flex>
 
