@@ -118,7 +118,6 @@ const Hero = () => {
             {!account && <ConnectWalletButton mr="8px" />}
             <NextLinkFromReactRouter to="/allies">
               {' '}
-              {/* TODO */}
               <Button variant={!account ? 'secondary' : 'primary'}>{t('See rewards')}</Button>
             </NextLinkFromReactRouter>
           </Flex>
