@@ -9,7 +9,7 @@ interface LogoProps extends SvgProps {
 const Logo: React.FC<React.PropsWithChildren<LogoProps>> = ({ isDark, ...props }) => {
   return (
     <div>
-      <img src="images/logo-long.png" alt="BabyApe logo" />
+      <img src="images/logo-long.png" alt="BabyApe logo" width="160px" height="42px" />
     </div>
   );
 };
