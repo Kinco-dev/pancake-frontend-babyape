@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { TimerIcon } from "@pancakeswap/uikit";
 import { createElement, memo } from "react";
 import { Flex } from "../Box";
 import isTouchDevice from "../../util/isTouchDevice";
@@ -28,7 +29,13 @@ const MenuItems: React.FC<React.PropsWithChildren<MenuItemsProps>> = ({
             isDisabled={disabled}
           >
             <MenuItem {...linkProps} isActive={isActive} statusColor={statusColor} isDisabled={disabled}>
-              {label || (icon && createElement(Icon as any, { color: isActive ? "secondary" : "textSubtle" }))}
+              {href === "/allies"
+                ? `${label} 🔥`
+                : label ||
+                  (icon &&
+                    createElement(Icon as any, {
+                      color: isActive ? "secondary" : href === "/allies" ? "primary" : "textSubtle",
+                    }))}
             </MenuItem>
           </DropdownMenu>
         );
