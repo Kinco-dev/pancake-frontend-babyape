@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
 import useTheme from 'hooks/useTheme'
@@ -5,7 +6,7 @@ import { formatLocalisedCompactNumber } from 'utils/formatBalance'
 import useSWRImmutable from 'swr/immutable'
 import IconCard, { IconCardData } from '../IconCard'
 import StatCardContent from './StatCardContent'
-import GradientLogo from '../GradientLogoSvg'
+import techrateImage from '../../../../../public/images/techrate.png'
 
 const Stats = () => {
   const { t } = useTranslation()
@@ -40,8 +41,16 @@ const Stats = () => {
         {t('Used by a large community.')}
       </Heading>
       <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Audited and trusted')}
+        {t('Audited by Techrate')}
       </Heading>
+      <a
+        href="https://github.com/TechRate/Smart-Contract-Audits/blob/main/September_2022/AllianceSwap.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Image src={techrateImage} priority placeholder="blur" alt={t('Techrate logo')} />
+      </a>
+
       <Text textAlign="center" color="textSubtle">
         {t('AllianceSwap is a decentralized platform based on the PancakeSwap liquidity pools. ')}
       </Text>

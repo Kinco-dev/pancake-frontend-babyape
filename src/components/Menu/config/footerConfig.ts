@@ -39,7 +39,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
 
       {
         label: t('Audits'),
-        href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/April/Baby%20ape.pdf',
+        href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/September_2022/AllianceSwap.pdf',
       },
     ],
   },
